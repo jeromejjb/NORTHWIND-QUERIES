@@ -52,3 +52,18 @@
 
 --DELETE FROM [Order Details]
 --WHERE [Quantity] = '1'
+__________________________________________________________________________________________________________________________________________________________________________________
+
+select AVG(Quantity) as Avg, MIN(Quantity) as Min, MAX(Quantity) as Max From [Order Details]
+
+select AVG(Quantity) as Avg, MIN(Quantity) as Min, MAX(Quantity) as Max From [Order Details] GROUP BY OrderID
+
+SELECT Orders.CustomerID FROM Orders WHERE OrderID= 10290;
+
+Select *From [Orders] INNER JOIN [Customers]
+ON [Orders].CustomerID = [Customers].CustomerID;
+
+SELECT FirstName FROM Employees WHERE ReportsTo IS NULL
+
+SELECT FirstName FROM Employees WHERE ReportsTo = '2'
+
